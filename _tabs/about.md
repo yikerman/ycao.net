@@ -13,7 +13,7 @@ I'm Yi, a student who likes to mess around with code.
 
 ## Find me
 
-- Mail: [yi@ycao.net](mailto:yi@ycao.net) (PGP key: [`559FA8122D3FD108 `](/pgp))
+- Mail: [yi@ycao.net](mailto:yi@ycao.net) (PGP key: [`559FA8122D3FD108`](/pgp))
 - GitHub: [@yikerman](https://github.com/yikerman)
 - Mastodon: [@yikerman@techhub.social](https://techhub.social/@yikerman)
 
