@@ -9,7 +9,7 @@ order: 4
 
 ![metrics](https://raw.githubusercontent.com/yikerman/yikerman/refs/heads/master/github-metrics.svg)
 
-I'm Yi, a student who likes to mess around with code.
+I'm Yi, a student hacking around.
 
 ## Find me
 
