@@ -15,7 +15,7 @@ I'm Yi, a student hacking around.
 
 - Mail: [yi@ycao.net](mailto:yi@ycao.net) (PGP key: [`559FA8122D3FD108`](/pgp))
 - GitHub: [@yikerman](https://github.com/yikerman)
-- Mastodon: [@yikerman@techhub.social](https://techhub.social/@yikerman)
+- Instagram: [@y.i.kerman](https://www.instagram.com/y.i.kerman/)
 
 ## License
 
