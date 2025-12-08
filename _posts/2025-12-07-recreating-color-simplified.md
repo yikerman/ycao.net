@@ -1,6 +1,6 @@
 ---
-title: "Core Color Recreation Theory for Modern Displays"
-date: 2025-12-07 16:00:00 -0700
+title: "Color Recreation from First Principles"
+date: 2025-12-07 16:00:00 -0800
 tags: [photography, physics]
 math: true
 ---
