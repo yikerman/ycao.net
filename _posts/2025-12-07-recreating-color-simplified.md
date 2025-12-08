@@ -1,5 +1,5 @@
 ---
-title: "Simplified Color Recreation Theory for Modern Displays"
+title: "Core Color Recreation Theory for Modern Displays"
 date: 2025-12-07 16:00:00 -0700
 tags: [photography, physics]
 math: true
