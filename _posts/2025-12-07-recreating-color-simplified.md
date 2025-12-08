@@ -31,7 +31,7 @@ L_0 &= \int_0^\infty J_\text{display}(\lambda) s_L(\lambda) d\lambda \\
 \end{align*}
 $$
 
-Notice how $L_0$ is a linear conbination of $\int_0^\infty J_R(\lambda) s_L(\lambda) d\lambda$, $\int_0^\infty J_G(\lambda) s_L(\lambda) d\lambda$ and $\int_0^\infty J_B(\lambda) s_L(\lambda) d\lambda$ with coefficients $r$, $g$ and $b$. These integrals are named as sensitivities of the display primaries to the L cone cell, denoted as $S_{L,R}$, $S_{L,G}$ and $S_{L,B}$ respectively so that $L_0 = S_{L,R} r + S_{L,G} g + S_{L,B} b$. Thus, we can represent the color recreation for L, M and S cone cells in matrix form regarding the sentivities $\mathbf{S}$:
+Notice how $L_0$ is a linear conbination of $\int_0^\infty J_R(\lambda) s_L(\lambda) d\lambda$, $\int_0^\infty J_G(\lambda) s_L(\lambda) d\lambda$ and $\int_0^\infty J_B(\lambda) s_L(\lambda) d\lambda$ with coefficients $r$, $g$ and $b$. These integrals are named as sensitivities of the display primaries to the L cone cell, denoted as $S_{L,R}$, $S_{L,G}$ and $S_{L,B}$ respectively so that $L = r S_{L,R} + g S_{L,G} + b S_{L,B}$. Thus, we can represent the color recreation for L, M and S cone cells in matrix form regarding the sentivities $\mathbf{S}$:
 
 $$
 \begin{bmatrix}
