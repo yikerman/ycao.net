@@ -12,7 +12,7 @@ Real world colors are continuous spectra, such as the [sunlight spectrum](https:
 Human eyes have three types of color receptors (cone cells) that are [sensitive to different ranges of wavelengths](https://en.wikipedia.org/wiki/LMS_color_space), named L, M, S for long, medium and short wavelengths respectively, loosely corresponding to red, green and blue colors. Represent the responsiveness of these three types of cells as functions $s(\lambda)$ at wavelength $\lambda$, then the perceived intensity of a type of cone cell can be expressed as (take L as an example):
 
 $$
-L = \int_0^\infty J(\lambda) s_L(\lambda) d\lambda
+L = \int_{-\infty}^\infty J(\lambda) s_L(\lambda) d\lambda
 $$
 
 and same goes for M and S cells. As long as $\begin{bmatrix} L & M & S \end{bmatrix}$ are the same, the perception will be the same. It is significant not only because it is the basis of human color vision, but also because camera sensors, utilizing [Bayer filter](https://en.wikipedia.org/wiki/Bayer_filter) or similar technologies, mimic this mechanism to capture colors.
@@ -27,13 +27,13 @@ Consider one kind of cone cell, say L, to recreate $L_0$, we have:
 
 $$
 \begin{align*}
-L_0 &= \int_0^\infty J_\text{display}(\lambda) s_L(\lambda) d\lambda \\
-L_0 &= \int_0^\infty \left( r J_R(\lambda) + g J_G(\lambda) + b J_B(\lambda) \right) s_L(\lambda) d\lambda \\
-L_0 &= r \int_0^\infty J_R(\lambda) s_L(\lambda) d\lambda + g \int_0^\infty J_G(\lambda) s_L(\lambda) d\lambda + b \int_0^\infty J_B(\lambda) s_L(\lambda) d\lambda
+L_0 &= \int_{-\infty}^\infty J_\text{display}(\lambda) s_L(\lambda) d\lambda \\
+L_0 &= \int_{-\infty}^\infty \left( r J_R(\lambda) + g J_G(\lambda) + b J_B(\lambda) \right) s_L(\lambda) d\lambda \\
+L_0 &= r \int_{-\infty}^\infty J_R(\lambda) s_L(\lambda) d\lambda + g \int_{-\infty}^\infty J_G(\lambda) s_L(\lambda) d\lambda + b \int_{-\infty}^\infty J_B(\lambda) s_L(\lambda) d\lambda
 \end{align*}
 $$
 
-Notice how $L_0$ is a linear combination of $\int_0^\infty J_R(\lambda) s_L(\lambda) d\lambda$, $\int_0^\infty J_G(\lambda) s_L(\lambda) d\lambda$ and $\int_0^\infty J_B(\lambda) s_L(\lambda) d\lambda$ with coefficients $r$, $g$ and $b$. These integrals are named as sensitivities of the display primaries to the L cone cell, denoted as $S_{L,R}$, $S_{L,G}$ and $S_{L,B}$ respectively so that $L = r S_{L,R} + g S_{L,G} + b S_{L,B}$. Thus, we can represent the color perception for L, M and S cone cells caused by RGB light intensities in matrix form regarding the sensitivities $\mathbf{S}$:
+Notice how $L_0$ is a linear combination of $\int_{-\infty}^\infty J_R(\lambda) s_L(\lambda) d\lambda$, $\int_{-\infty}^\infty J_G(\lambda) s_L(\lambda) d\lambda$ and $\int_{-\infty}^\infty J_B(\lambda) s_L(\lambda) d\lambda$ with coefficients $r$, $g$ and $b$. These integrals are named as sensitivities of the display primaries to the L cone cell, denoted as $S_{L,R}$, $S_{L,G}$ and $S_{L,B}$ respectively so that $L = r S_{L,R} + g S_{L,G} + b S_{L,B}$. Thus, we can represent the color perception for L, M and S cone cells caused by RGB light intensities in matrix form regarding the sensitivities $\mathbf{S}$:
 
 $$
 \begin{bmatrix}
